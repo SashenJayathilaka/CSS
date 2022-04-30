@@ -1,102 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS Cheat Sheet</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Drop Down Menu Using</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="container">
-		<div class="box-1">
-			<h1>Hello World</h1>
-			<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
-			CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
-		</div>
+	<div class="menu-bar">
 
-		<div class="box-2">
-			<h1>Goodbay World</h1>
-			<p>The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+	<ul>
+		<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+		<li><a href="#"><i class="fa fa-user"></i>About Us</a>
 
-			The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.</p>
-			<a class="button" href="">Read More</a>
-		</div>
-
-			<div class="categories">
-				<h2>Categories</h2>
+			<div class="sub-menu-1">
 				<ul>
-					<li><a href="#">Categories 1</a></li>
-					<li><a href="#">Categories 2</a></li>
-					<li><a href="#">Categories 3</a></li>
-					<li><a href="https://www.w3schools.com/css/">Categories 4</a></li>
-					<li><a href="text.html">Categories 5</a></li>
+					<li><a href="#">Mission</a></li>
+					<li><a href="#">Vision</a></li>
+					<li><a href="#">Team</a></li>
+
 				</ul>
 			</div>
 
-			<form class="my-form">
-				<div class="form-group">
-					<label>Name: </label>
-					<input type="text" name="name">
-				</div>
-				<div class="form-group">
-					<label>Email: </label>
-					<input type="text" name="email">
-				</div>
-				<div class="form-group">
-					<label>Message: </label>
-					<textarea name="message"></textarea>
-				</div>
-				<input class="button" type="submit" value="Submit" name="">
-			</form>
+		</li>
+		<li><a href="#"><i class="fa fa-clone"></i>Services</a>
 
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
+			<div class="sub-menu-1">
+				<ul>
+					<li><a href="#">Web Designing</a></li>
+					<li class="hover-me"><a href="#">Marketing</a><i class="fa fa-angle-right"></i>
+						<div class="sub-menu-2">
+							<ul>
+								<li><a href="#">SEO</a></li>
+								<li><a href="#">Social Media</a></li>
+								<li><a href="#">Email Marketing</a></li>
+							</ul>
+						</div>
+
+					</li>
+					<li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+
+						<div class="sub-menu-2">
+							<ul>
+								<li><a href="#">Android App</a></li>
+								<li><a href="#">ios App</a></li>
+								<li><a href="#">Ionic App</a></li>
+								<li><a href="#">Flutter App</a></li>
+								<li><a href="#">Unoity App</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;.</P>
-			</div>
-			<div class="clr"></div>
+		</li>
 
-			<div id="main-block" >
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
+		<li><a href="#"><i class="fa fa-users"></i>Cilients</a></li>
+		<li><a href="#"><i class="fa fa-angellist"></i>Investors</a></li>
+		<li><a href="#"><i class="fa fa-inr"></i>Pricing</a></li>
+		<li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+		<li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+	</ul>
+	</div>
 
-			<div id="sidebar">
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
-
-			<div class="clr"></div>
-
-			<div class="p-box">
-				<h1>Hello</h1>
-				<h2>Goodbay</h2>
-			</div>
-
-			<ul class="my-list">
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-			</ul>
-
-	</div> <!-- ./contatiner -->
-
-	<a class="fix-me button" href="">Hello</a>
-
-	<div style="margin-top: 500px;"></div>
 </body>
 </html>
