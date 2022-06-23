@@ -1,102 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS Cheat Sheet</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Make Website SVG Animation</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<div class="box-1">
-			<h1>Hello World</h1>
-			<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
-
-			CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
-		</div>
-
-		<div class="box-2">
-			<h1>Goodbay World</h1>
-			<p>The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
-
-			The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.</p>
-			<a class="button" href="">Read More</a>
-		</div>
-
-			<div class="categories">
-				<h2>Categories</h2>
+	<div id="main">
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo1.png" alt="">
+			</div>
+			<nav>
 				<ul>
-					<li><a href="#">Categories 1</a></li>
-					<li><a href="#">Categories 2</a></li>
-					<li><a href="#">Categories 3</a></li>
-					<li><a href="https://www.w3schools.com/css/">Categories 4</a></li>
-					<li><a href="text.html">Categories 5</a></li>
+					<li>Studio</li>
+					<li>Partners</li>
+					<li>Media</li>
+					<li>User</li>
 				</ul>
+			</nav>
+		</div>
+		<div class="circle-box">
+			<svg height="402" width="402">
+				<circle r="200" cx="201" cy="201" stroke-width="1px" stroke="gray" fill="none" />
+			</svg>
+			<svg height="402" width="402">
+				<circle r="200" cx="201" cy="201" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle"/>
+			</svg>
+			<div>
+				<span id="step1"></span>
+				<span id="step2"></span>
+				<span id="step3"></span>
+				<span id="step4"></span>
+				<span id="step5"></span>
 			</div>
-
-			<form class="my-form">
-				<div class="form-group">
-					<label>Name: </label>
-					<input type="text" name="name">
+			<div class="user-box" id="userBox">
+				<div class="user">
+					<img src="images/person-1.jpg">
+					<h1>Sashen Hasindu</h1>
+					<p>I am a very honest and decent boy and follow all the instructions from my parents and teachers.I complete my homework regularly and never get late to school.</p>
+					<div class="social-links">
+						<img src="images/facebook.png">
+						<img src="images/instagram.png">
+						<img src="images/twitter.png">
+						<img src="images/linkedin.png">
+					</div>
 				</div>
-				<div class="form-group">
-					<label>Email: </label>
-					<input type="text" name="email">
+				<div class="user">
+					<img src="images/person-2.jpg">
+					<h1>Emily Scarlett</h1>
+					<p>I am a very honest and decent boy and follow all the instructions from my parents and teachers.I complete my homework regularly and never get late to school.</p>
+					<div class="social-links">
+						<img src="images/facebook.png">
+						<img src="images/instagram.png">
+						<img src="images/twitter.png">
+						<img src="images/linkedin.png">
+					</div>
 				</div>
-				<div class="form-group">
-					<label>Message: </label>
-					<textarea name="message"></textarea>
+				<div class="user">
+					<img src="images/person-3.jpg">
+					<h1>Carl Perry</h1>
+					<p>I am a very honest and decent boy and follow all the instructions from my parents and teachers.I complete my homework regularly and never get late to school.</p>
+					<div class="social-links">
+						<img src="images/facebook.png">
+						<img src="images/instagram.png">
+						<img src="images/twitter.png">
+						<img src="images/linkedin.png">
+					</div>
 				</div>
-				<input class="button" type="submit" value="Submit" name="">
-			</form>
-
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
+				<div class="user">
+					<img src="images/person-5.jpg">
+					<h1>Amelia Charlotte</h1>
+					<p>I am a very honest and decent boy and follow all the instructions from my parents and teachers.I complete my homework regularly and never get late to school.</p>
+					<div class="social-links">
+						<img src="images/facebook.png">
+						<img src="images/instagram.png">
+						<img src="images/twitter.png">
+						<img src="images/linkedin.png">
+					</div>
+				</div>
+				<div class="user">
+					<img src="images/person-4.jpg">
+					<h1>Daniel Jacob</h1>
+					<p>I am a very honest and decent boy and follow all the instructions from my parents and teachers.I complete my homework regularly and never get late to school.</p>
+					<div class="social-links">
+						<img src="images/facebook.png">
+						<img src="images/instagram.png">
+						<img src="images/twitter.png">
+						<img src="images/linkedin.png">
+					</div>
+				</div>
 			</div>
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
-			<div class="block">
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;.</P>
-			</div>
-			<div class="clr"></div>
+		</div>
+	</div>
 
-			<div id="main-block" >
-				<h3>Heading</h3>
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
+	<script>
+		var svgCircle = document.getElementById("svgCircle");
+		var step1 = document.getElementById("step1");
+		var step2 = document.getElementById("step2");
+		var step3 = document.getElementById("step3");
+		var step4 = document.getElementById("step4");
+		var step5 = document.getElementById("step5");
+		var main = document.getElementById("main");
+		var userBox = document.getElementById("userBox");
 
-			<div id="sidebar">
-				<P>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility;. </P>
-			</div>
+		main.style.backgroundImage = "url(images/img-1.jpg)";
 
-			<div class="clr"></div>
 
-			<div class="p-box">
-				<h1>Hello</h1>
-				<h2>Goodbay</h2>
-			</div>
+		step1.addEventListener('click',()=>{
+			svgCircle.style.strokeDashoffset = "1004"
+			main.style.backgroundImage = "url(images/img-2.jpg)";
+			userBox.style.top = "-350px";
+		});
+		step2.addEventListener('click',()=>{
+			svgCircle.style.strokeDashoffset = "753"
+			main.style.backgroundImage = "url(images/img-3.jpg)";
+			userBox.style.top = "-800px";
+		});
+		step3.addEventListener('click',()=>{
+			svgCircle.style.strokeDashoffset = "502"
+			main.style.backgroundImage = "url(images/img-4.jpg)";
+			userBox.style.top = "-1250px";
+		});
+		step4.addEventListener('click',()=>{
+			svgCircle.style.strokeDashoffset = "251"
+			main.style.backgroundImage = "url(images/img-5.jpg)";
+			userBox.style.top = "-1700px";
+		});
+		step5.addEventListener('click',()=>{
+			svgCircle.style.strokeDashoffset = "0"
+			main.style.backgroundImage = "url(images/img-1.jpg)";
+			userBox.style.top = "100px";
+		});
 
-			<ul class="my-list">
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-			</ul>
 
-	</div> <!-- ./contatiner -->
+	</script>
 
-	<a class="fix-me button" href="">Hello</a>
-
-	<div style="margin-top: 500px;"></div>
 </body>
 </html>
